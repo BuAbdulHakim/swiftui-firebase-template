@@ -11,17 +11,28 @@ import SwiftUI
 struct AuthenticationView: View {
     var body: some View {
         NavigationView {
-            VStack{
-                NavigationLink(
-                    destination: SignIn(),
-                    label: {Text("Sign in").modifier(SignInModifier())}
-                )
-                NavigationLink(
-                    destination: SignUp(),
-                    label: {Text("Create an account")}
-                )
+            ZStack{
+//                Color(#colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1))
+//                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                VStack{
+                    Image("Logo")
+                        .resizable()
+                        .scaledToFit()
+                    Text("On-SPark")
+                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    Text("Your new On-Street Parking Experince")
+                        .font(.caption)
+                    NavigationLink(
+                        destination: SignIn(),
+                        label: {Text("Sign in").modifier(SignInModifier())}
+                    )
+                    NavigationLink(
+                        destination: SignUp(),
+                        label: {Text("Create an account")}
+                    )
+                }
+                .navigationTitle("Home")
             }
-            .navigationTitle("Home")
         }
     }
 }
