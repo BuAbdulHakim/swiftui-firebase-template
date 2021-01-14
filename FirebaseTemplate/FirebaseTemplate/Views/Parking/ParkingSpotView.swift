@@ -19,53 +19,47 @@ import SwiftUI
 //}
 
 struct ParkingSpotView: View {
-    @EnvironmentObject var env: FirebaseEnv
-    let ParkingSpotEnvironment = ParkingSpotEnv()
+    @EnvironmentObject var parkingSpotEnvironment: ParkingSpotEnv
+    //let parkingSpotEnvironment = ParkingSpotEnv()
+    
     var body: some View {
-        
-                NavigationView {
-                    VStack(alignment: .leading){
-                        Text("Select Your Parking Destination")
-                            .font(.headline)
-                            .fontWeight(.heavy)
-                            Spacer()
-                        ScrollView(.horizontal){
-                            HStack{
-                                
-                                VStack{
-                                    Image("Bin-Khaldun St")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 200, height: 200, alignment: .center)
-                                    Text("Bin-Khaldun St")
-                                }
-                                Text("Tunisia St.")
-                                Text("Al-Muthana St.")
-                                Text("Soor St.")
-                                Text("Al-Shuhada St.")
+        NavigationView {
+            VStack(alignment: .leading){
+                Text("Select Your Parking Destination")
+                    .font(.headline)
+                    .fontWeight(.heavy)
+                Spacer()
+                ScrollView(.horizontal){
+                    HStack(spacing: 15){
+                        ForEach(parkingSpotEnvironment.spots, id: \.self){ spot in
+                            VStack{
+                                Image(spot.name)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 250, height: 150, alignment: .center)
+                                //.clipShape(Circle())
+                                Text(spot.name)
                             }
-//                    //Form {
-//                        Section(footer: Text("you are signed in!") , content: {
-//                            NavigationLink("Add a new item", destination: AddItem()
-//                                            .environmentObject(itemsEnvironment))
-//                            NavigationLink("List all items", destination: ListItems()
-//                                            .environmentObject(itemsEnvironment))
-//                        })
-//                    //}
-//                    .navigationTitle("Home")
-//                    .navigationBarItems(trailing: SignOutButton(env: env))
+                        }
+                        Text("Tunisia St.")
+                        Text("Al-Muthana St.")
+                        Text("Soor St.")
+                        Text("Al-Shuhada St.")
+                    }
+                    
                 }
-                        Spacer()
+                Spacer()
             }
             
-        }
+        }//.onAppear(perform: parkingSpotEnvironment.loadSpots)
+        //.navigationBarItems(trailing: SignOutButton(env: env))
     }
 }
 
 struct ParkingSpotView_Previews: PreviewProvider {
     static var previews: some View {
         ParkingSpotView()
-            .environmentObject(FirebaseEnv())
+            .environmentObject(ParkingSpotEnv())
     }
 }
 

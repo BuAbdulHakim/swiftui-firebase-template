@@ -7,14 +7,15 @@
 //
 
 import Foundation
+import SwiftUI
 
 class ParkingSpotEnv: ObservableObject{
-    let collectionName = "ParkingSpot"
+    let collectionName = "ParkingSpots"
     @Published var spots: [ParkingSpot] = []
-    
-    func loadItems(){
-        Networking.getListOf(COLLECTION_NAME: collectionName) { (spots: [ParkingSpot]) in
-            self.spots = spots
-        }
-    }
+
+//    func loadSpots(){
+//        Networking.getListOf(COLLECTION_NAME: collectionName) { (spots: [ParkingSpot]) in
+//            self.spots = spots
+//        }
+//    }
 }

@@ -22,6 +22,8 @@ struct SignOutButton: View{
 struct Home: View {
     @EnvironmentObject var env: FirebaseEnv
     let itemsEnvironment = ItemsEnv()
+    let parkingSpotEnvironmant = ParkingSpotEnv()
+    
     var body: some View {
         NavigationView {
             Form {
@@ -30,6 +32,10 @@ struct Home: View {
                                     .environmentObject(itemsEnvironment))
                     NavigationLink("List all items", destination: ListItems()
                                     .environmentObject(itemsEnvironment))
+                    NavigationLink("Parking Spot", destination: ParkingSpotView()
+                                    .environmentObject(parkingSpotEnvironmant))
+                    NavigationLink("ListParkingSpot", destination: ListParkingSpot())
+                    
                 })
             }
             .navigationTitle("Home")

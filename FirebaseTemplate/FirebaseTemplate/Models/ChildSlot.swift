@@ -7,12 +7,16 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct ChildSlot: Hashable{
-    var id: Int
-    var ParkingSlotID: Int
+struct ChildSlot: Hashable, Identifiable{
+    //var id: Int
+    //var ParkingSlotID: Int
     var number: Int
-    var status: Status
+    var status: String
+    var color: Color
+    
+    var id = UUID()
     
     enum Status{
         case empty, occupied, reserved
@@ -27,4 +31,38 @@ struct ChildSlot: Hashable{
         }
     }
 }
+
+var BinKhaldun = [
+    ChildSlot(number: 1, status: "Empty", color: .green),
+    ChildSlot(number: 2, status: "Occupied", color: .red),
+    ChildSlot(number: 3, status: "Reserved", color: .yellow),
+    ChildSlot(number: 4, status: "Occupied", color: .red),
+]
+var Tunisia = [
+    ChildSlot(number: 1, status: "Occupied", color: .red),
+    ChildSlot(number: 2, status: "Occupied", color: .red),
+    ChildSlot(number: 3, status: "Empty", color: .green),
+    ChildSlot(number: 4, status: "Occupied", color: .red),
+]
+
+var Beirut = [
+    ChildSlot(number: 1, status: "Reserved", color: .yellow),
+    ChildSlot(number: 2, status: "Occupied", color: .red),
+    ChildSlot(number: 3, status: "Reserved", color: .yellow),
+    ChildSlot(number: 4, status: "Reserved", color: .yellow),
+]
+
+var Soor = [
+    ChildSlot(number: 1, status: "Occupied", color: .red),
+    ChildSlot(number: 2, status: "Empty", color: .green),
+    ChildSlot(number: 3, status: "Empty", color: .green),
+    ChildSlot(number: 4, status: "Empty", color: .green),
+]
+
+var AlShuhada = [
+    ChildSlot(number: 1, status: "Occupied", color: .red),
+    ChildSlot(number: 2, status: "Occupied", color: .red),
+    ChildSlot(number: 3, status: "Occupied", color: .red),
+    ChildSlot(number: 4, status: "Occupied", color: .red),
+]
 

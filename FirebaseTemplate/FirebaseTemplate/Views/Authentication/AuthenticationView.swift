@@ -12,8 +12,8 @@ struct AuthenticationView: View {
     var body: some View {
         NavigationView {
             ZStack{
-//                Color(#colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1))
-//                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                Color(#colorLiteral(red: 0.205801785, green: 0.3273817897, blue: 0.3992141187, alpha: 1))
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 VStack{
                     Image("Logo")
                         .resizable()
@@ -31,7 +31,8 @@ struct AuthenticationView: View {
                         label: {Text("Create an account")}
                     )
                 }
-                .navigationTitle("Home")
+                .foregroundColor(.white)
+                //.navigationTitle("Home")
             }
         }
     }

@@ -8,8 +8,9 @@ struct MainApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            MainView()
-                .environmentObject(FirebaseEnv())
+            ListChildSlot(childSlot: BinKhaldun)
+            //MainView()
+                //.environmentObject(FirebaseEnv())
         }
     }
 }
