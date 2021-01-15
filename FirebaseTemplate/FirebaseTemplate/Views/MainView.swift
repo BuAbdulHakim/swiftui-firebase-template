@@ -16,7 +16,8 @@ struct MainView: View {
             //Home()
         }
         else{
-            AuthenticationView()
+            //AuthenticationView()
+            NewAuthView()
         }
     }
 }

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		526AD58525B1152F00AB675C /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526AD58425B1152F00AB675C /* Wallet.swift */; };
+		526AD58825B11D3C00AB675C /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526AD58725B11D3C00AB675C /* WalletView.swift */; };
+		526AD58B25B11D4900AB675C /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526AD58A25B11D4900AB675C /* AboutView.swift */; };
+		526AD58E25B11DAF00AB675C /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526AD58D25B11DAF00AB675C /* Menu.swift */; };
+		526AD59125B1297C00AB675C /* NewAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526AD59025B1297C00AB675C /* NewAuthView.swift */; };
+		526AD59425B13D4700AB675C /* ReservationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526AD59325B13D4700AB675C /* ReservationsView.swift */; };
 		52D117EF25ACC05100B3E200 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52D117EE25ACC05100B3E200 /* GoogleService-Info.plist */; };
 		52D117F325ACC80500B3E200 /* ParkingSpotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D117F225ACC80500B3E200 /* ParkingSpotView.swift */; };
 		52D117F725ADDB2700B3E200 /* ParkingSpotEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D117F625ADDB2700B3E200 /* ParkingSpotEnv.swift */; };
@@ -70,6 +76,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		526AD58425B1152F00AB675C /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		526AD58725B11D3C00AB675C /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
+		526AD58A25B11D4900AB675C /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		526AD58D25B11DAF00AB675C /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		526AD59025B1297C00AB675C /* NewAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAuthView.swift; sourceTree = "<group>"; };
+		526AD59325B13D4700AB675C /* ReservationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsView.swift; sourceTree = "<group>"; };
 		52D117EE25ACC05100B3E200 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		52D117F225ACC80500B3E200 /* ParkingSpotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSpotView.swift; sourceTree = "<group>"; };
 		52D117F625ADDB2700B3E200 /* ParkingSpotEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSpotEnv.swift; sourceTree = "<group>"; };
@@ -209,6 +221,10 @@
 				D2C079C625981C260053EDFD /* Home.swift */,
 				D2C079C9259821F40053EDFD /* Item */,
 				D2C079C425981C1A0053EDFD /* Authentication */,
+				526AD58725B11D3C00AB675C /* WalletView.swift */,
+				526AD58A25B11D4900AB675C /* AboutView.swift */,
+				526AD58D25B11DAF00AB675C /* Menu.swift */,
+				526AD59325B13D4700AB675C /* ReservationsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,6 +246,7 @@
 				D2C079C125981BDE0053EDFD /* AuthenticationView.swift */,
 				D2C079B5259818A20053EDFD /* SignUp.swift */,
 				D2C079AC259815F30053EDFD /* SignIn.swift */,
+				526AD59025B1297C00AB675C /* NewAuthView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -366,6 +383,7 @@
 				D2C2705624662F3F005E16A3 /* Item.swift */,
 				52D117F925ADDB4D00B3E200 /* ParkingSpot.swift */,
 				52D117FC25ADDDAB00B3E200 /* ChildSlot.swift */,
+				526AD58425B1152F00AB675C /* Wallet.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -489,13 +507,17 @@
 				52D117FD25ADDDAC00B3E200 /* ChildSlot.swift in Sources */,
 				D2C2704C24662C6E005E16A3 /* Networking.swift in Sources */,
 				D2C079BE259819FD0053EDFD /* MainView.swift in Sources */,
+				526AD58525B1152F00AB675C /* Wallet.swift in Sources */,
 				52FC205925AEEE7B00CB8A21 /* ChildSlotView.swift in Sources */,
 				D2C079D0259822090053EDFD /* ListItems.swift in Sources */,
+				526AD58E25B11DAF00AB675C /* Menu.swift in Sources */,
 				D2C079C725981C260053EDFD /* Home.swift in Sources */,
 				D2C2705724662F3F005E16A3 /* Item.swift in Sources */,
 				D2C079D9259843330053EDFD /* OptionalState.swift in Sources */,
 				D2C2704B24662C68005E16A3 /* Optional.swift in Sources */,
 				D2C079A2259813E70053EDFD /* MainApp.swift in Sources */,
+				526AD58825B11D3C00AB675C /* WalletView.swift in Sources */,
+				526AD59125B1297C00AB675C /* NewAuthView.swift in Sources */,
 				D2C2704924662C68005E16A3 /* Codable.swift in Sources */,
 				D2C2704724662C63005E16A3 /* ValidatePassword.swift in Sources */,
 				52D117F725ADDB2700B3E200 /* ParkingSpotEnv.swift in Sources */,
@@ -507,6 +529,7 @@
 				D2C2704624662C63005E16A3 /* ImageUploader.swift in Sources */,
 				D2C079CC259822010053EDFD /* AddItem.swift in Sources */,
 				D2C079B6259818A20053EDFD /* SignUp.swift in Sources */,
+				526AD59425B13D4700AB675C /* ReservationsView.swift in Sources */,
 				52D117FA25ADDB4D00B3E200 /* ParkingSpot.swift in Sources */,
 				D2C2705224662C9A005E16A3 /* User.swift in Sources */,
 				D2C079C225981BDE0053EDFD /* AuthenticationView.swift in Sources */,
@@ -514,6 +537,7 @@
 				52D117F325ACC80500B3E200 /* ParkingSpotView.swift in Sources */,
 				D2C2705024662C73005E16A3 /* NetworkingSignUp.swift in Sources */,
 				D2C2704524662C63005E16A3 /* ImageLoader.swift in Sources */,
+				526AD58B25B11D4900AB675C /* AboutView.swift in Sources */,
 				52D1180025AE047B00B3E200 /* ChildSlotEnv.swift in Sources */,
 				D2C2704824662C63005E16A3 /* DateFromatter.swift in Sources */,
 				D2C2704F24662C73005E16A3 /* NetowrkableAuth.swift in Sources */,

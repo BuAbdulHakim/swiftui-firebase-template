@@ -9,15 +9,15 @@
 import SwiftUI
 
 
-struct SignOutButton: View{
-    var env: FirebaseEnv
-    var body: some View{
-        Button("Signout") {
-            env.signOut()
-        }
-        .foregroundColor(.red)
-    }
-}
+//struct SignOutButton: View{
+//    var env: FirebaseEnv
+//    var body: some View{
+//        Button("Signout") {
+//            env.signOut()
+//        }
+//        .foregroundColor(.red)
+//    }
+//}
 
 struct Home: View {
     @EnvironmentObject var env: FirebaseEnv
@@ -39,7 +39,7 @@ struct Home: View {
                 })
             }
             .navigationTitle("Home")
-            .navigationBarItems(trailing: SignOutButton(env: env))
+            //.navigationBarItems(trailing: SignOutButton(env: env))
         }
     }
 }
